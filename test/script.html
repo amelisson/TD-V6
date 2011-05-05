@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajax AutoSuggest Script</title>
+<script type="text/javascript" language="javascript" src="ajax.js"></script>
+<script type="text/javascript" language="javascript" src="tools.js"></script>
+<script type="text/javascript" language="javascript" src="autosuggest.js"></script>
+<script type="text/javascript" language="javascript">
+
+
+
+</script>
+<style type="text/css">
+<!--
+.searchList {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: absolute;
+	width: 206px;
+	height: 160px;
+	overflow-y:auto;
+	overflow:-moz-auto-vertical
+}
+.wrapSearch {
+}
+#input {
+	width: 220px;
+	padding: 2px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+}
+html, body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+}
+.searchList li {
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	width: 98%;
+}
+.searchList li a{
+	display: block;
+	color: #006;
+	text-decoration: none;
+	background-color: #F9F9F9;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+.searchList li a:hover{
+	color: #FFF;
+	background-color: #555;
+}
+.listWrap {
+	visibility: hidden;
+}
+-->
+</style>
+</head>
+<body>
+<div class="wrapSearch">
+  <div>
+    <input name="input" type="text" id="input1" size="30" maxlength="1000" onkeyup="autoSuggest(this.id, 'listWrap1', 'searchList1', 'input1', event);" onkeydown="keyBoardNav(event, this.id);" />   <input type="submit" name="search" id="search1" value="Search" />
+  </div>
+  <div class="listWrap" id="listWrap1">
+  <ul class="searchList" id="searchList1">
+  </ul>
+  </div>
+</div>
+
+<div class="wrapSearch" style="margin-top:250px">
+  <div>
+    <input name="input" type="text" id="input2" size="30" maxlength="1000" onkeyup="autoSuggest(this.id, 'listWrap2', 'searchList2', 'input2', event);" onkeydown="keyBoardNav(event, this.id);" />   <input type="submit" name="search" id="search2" value="Search" />
+  </div>
+  <div class="listWrap" id="listWrap2">
+  <ul class="searchList" id="searchList2">
+  </ul>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+body  {
+	font: 		12px Verdana, Arial;
+	margin: 	0;  
+	padding: 	0;
+	text-align: 	center; 
+	color: 		#000000;
+	background-color: #CCC;
+}
+
+
+.twoColElsLtHdr #container {
+	width: 		1124px;  /* cette largeur crée un conteneur qui s'adaptera dans une fenêtre de navigateur de 800 pixels avec les tailles de police par défaut */
+	background: 	#FFFFFF;
+	margin: 	0 auto; /* les marges automatiques (et dotées d'une largeur positive) centrent la page */
+	border: 	1px solid #000000;
+	text-align: 	left; /* ce paramétrage annule le paramètre text-align: center de l'élément body. */
+} 
+
+.twoColElsLtHdr #header { 
+	background: 	#DDDDDD; 
+	padding: 	0 10px;  /* ce remplissage correspond à l'alignement à gauche des éléments des div qui apparaissent en dessous. Si, au lieu de texte, c'est une image qui est insérée dans l'élément #header, il est conseillé de supprimer le remplissage. */
+} 
+
+.twoColElsLtHdr #header h1 {
+	margin: 	0; /* la mise à zéro de la marge du dernier élément du div #header permet d'éviter une disparition de la marge (espace inexplicable entre les éléments div). Si l'élément div est entouré d'une bordure, cette précaution n'est pas nécessaire, car la bordure évite également la disparition de la marge */
+	padding: 	10px 0; /* l'utilisation de remplissage, au lieu d'une marge, permet d'éloigner l'élément des bords de l'élément div */
+}
+
+.twoColElsLtHdr #sidebar1 {
+	float: 		left; 
+	width: 		200px; /* cet élément est flottant, il faut donc lui attribuer une largeur */
+	background: 	#EBEBEB; /* la couleur de l'arrière-plan est affichée sur la largeur du contenu de la colonne, mais pas au-delà */
+	padding: 	15px 0; /* le remplissage en haut et en bas crée un espace visuel à l'intérieur de cet élément div */
+}
+
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 	10px; /* il est conseillé d'attribuer des valeurs pour les marges gauche et droite de chaque élément qui sera placé dans les colonnes latérales */
+	margin-right: 	10px;
+}
+
+
+.twoColElsLtHdr #mainContent {
+	/*  margin: 0 1.5em 0 13em; la marge droite peut être indiquée en ems ou en pixels. Elle crée l'espace dans la partie inférieure du côté droit de la page. */
+	 margin: 	0 0em 0 17.5em;
+} 
+
+.twoColElsLtHdr #footer { 
+	padding: 	0 10px; /* ce remplissage correspond à l'alignement à gauche des éléments des div qui apparaissent au-dessus. */
+	background:	#DDDDDD;
+} 
+
+.twoColElsLtHdr #footer p {
+	margin: 	0; /* la mise à zéro de la marge du premier élément du pied de page permet d'éviter une possible disparition de la marge (espace entre les éléments div) */
+	padding: 	10px 0; /* l'utilisation d'un remplissage pour cet élément crée un espace, tout comme une marge l'aurait fait, mais en évitant le risque de disparition de la marge */
+}
+
+
+.fltrt { /* cette classe permet de rendre flottant le côté droit d'un élément dans la page. L'élément flottant doit précéder l'élément à côté duquel il doit se trouver dans la page. */
+	float: 		right;
+	margin-left: 	8px;
+}
+
+.fltlft { /* cette classe permet de rendre flottant le côté gauche d'un élément dans la page */
+	float: 		left;
+	margin-right: 	8px;
+}
+
+.clearfloat { /* cette classe doit être placée pour un élément div ou break et doit être l'élément final avant la balise de fin d'un conteneur qui doit contenir entièrement un élément flottant */
+    	clear:		both;
+    	height:		0;
+    	font-size: 	1px;
+    	line-height: 	0px;
+}	
+
+
+.spacer .bouton { margin-top: 5px;}
+
+.bouton {
+  	padding:		5px 10px 5px 10px;
+  	color:			#fff;
+  	text-decoration:	none;
+  	font-weight:		bold;
+  	line-height:		30px;
+  	height:			30px;
+  	background:		url(bg.png) 0 0 repeat-x #363636;
+  	-moz-border-radius: 	5px;
+  	-webkit-border-radius: 	5px;
+  	-moz-box-shadow: 	0 2px 2px #bcbcbc;
+  	-webkit-box-shadow: 	0 2px 2px #bcbcbc;
+  	text-shadow: 		0 -1px 1px #565656;
+  	position: 		relative; 
+  	cursor: 		pointer;
+  }
+
+.petit.bouton {
+  	font-size:	12px;
+  	width: 		170px;
+  	height:		15px;
+  	display: 	block;
+  	margin-left:  5px;
+  	padding: 	0px 10px 10px 10px;
+  }
+  
+.moyen.bouton {
+  	font-size:	12px;
+  }
+  
+.grand.bouton {
+  	font-size:	14px;
+  	padding:	8px 12px 8px 12px;
+  }
+  
+
+.bleu.bouton {
+  	background-color:	#1083d4;
+  	text-shadow: 		0 -1px 1px #1083d4;
+  }
+  
+.vert.bouton {
+  	background-color:	#71b100;
+  	text-shadow: 		0 -1px 1px #71b100;
+  }
+  
+.orange.bouton {
+  	background-color:	#e59210;
+  	text-shadow: 		0 -1px 1px #e59210;
+  }
+  
+.rouge.bouton {
+  	background-color:	#ee361e;
+  	text-shadow: 		0 -1px 1px #e59210;
+  }
+  
+.violet.bouton {
+  	background-color:	#c8298f;
+  	text-shadow: 		0 -1px 1px #e59210;
+  }
+
+.recherche2 li {
+         background-color: 	lightgray;
+         color: 		black;
+         list-style-position: 	inside;
+         list-style-type: 	none;
+         margin-top:  		5px;
+         margin-left:  		-20px;
+         margin-right:  	7px;
+         padding-right:		 5px;
+         padding-left: 		5px;
+         font-weight: 		bold;
+         text-decoration: 	none;
+    
+} 
+
+
+.recherche2 li a
+{
+   	color: 			black;
+   	text-decoration: 	none;
+}
+
+
+.recherche2 li a:hover
+{
+   	text-decoration: 	underline;
+}
+
+
+.aff_prod_table  {
+    	background-color: 	#ebebeb;
+ }   
+ 
+ 
+.aff_prod_table_a {
+   	background-color:	#1083d4;
+   	color: 			white ;
+   	padding-right:		5px;
+   	padding-left:		5px;
+   	padding-top: 		2px;
+   	padding-bottom: 	2px;   
+   	display: 		block;
+   	width: 			250px;
+ }
+
+.aff_prod_table_b {
+   	background-color:	#1083d4;
+   	color: 			white ;
+   	padding-right:		5px;
+   	padding-left:		5px;
+   	padding-top: 		3px;
+   	padding-bottom: 	3px;
+   	display: 		block;
+   	width: 			865px;
+ }
+ 
+
+  .pagination {
+	 width:			15px;
+	 background-color:	#9CF;
+	 margin-right:		15px;
+	 padding-right:		5px;
+	 padding-left:		5px;
+	 text-align:		center;
+	 font-weight:		bold;
+ }
+
+ 
+ .pagination_actuel {
+     	width:			15px;
+	background-color:	#F09;
+	font-weight:		bold;
+	margin-right:		15px;
+	padding-right:		5px;
+	padding-left:		5px;
+	text-align:		center;	 
+ }
+ 
+ 
+.aff_prod_table td {
+    font-size:			12px;
+}
+
+
+#avance , #pref  {
+	background-color: 	#ebebeb;
+	padding-left: 		10px ; 
+	padding-top: 		10px ; 
+	padding-bottom: 	10px ;
+	margin : 		5px 20px 5px 20px ;
+	display: 		none;
+}
+
+
+.a_suivre {
+	color: 			darkblue;
+}
+
+
+
+.searchList {
+	margin-left: 		125px;
+	margin-top: 		0px;
+	padding: 		0px;
+	list-style-type: 	none;
+	position: 		absolute;
+	width: 			286px;
+	height: 		400px;
+	overflow-y:		auto;
+	overflow:		-moz-auto-vertical
+}
+.wrapSearch {
+}
+
+
+.searchList li {
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	width: 98%;
+}
+.searchList li a{
+	display: 		block;
+	color: 			#006;
+	text-decoration: 	none;
+	background-color: 	#F9F9F9;
+	padding-top: 		5px;
+	padding-right: 		5px;
+	padding-bottom: 	5px;
+	padding-left: 		8px;
+}
+.searchList li a:hover{
+	color: 			#FFF;
+	background-color: 	#555;
+}
+.listWrap {
+	visibility: 		hidden;
+}
+
+
+.lettrine {
+	color: 			white;
+	background-color: 	orange ;
+	padding: 		1px 2px 1px 2px;
+	margin: 		1px 2px 1px 2px;
+	font: 			12px Arial;
+	font-weight:		bold;
+}
+
+  
+#cadre_photo {
+	position:	fixed;
+	display:	none;
+	height:		33%;
+	top:		10%;
+	left:		100px;
+	width: 		200px;
+	padding:	5px;
+	background-color: WHITE;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;	
+}
+ 
+ 
+.prixpv {
+	color: 			black;
+	background-color: 	lightgray ;
+	padding-left: 		10px ;
+	padding-right: 		10px;
+	font: 			14px Arial;
+	font-weight:		bold;	
+
+}
